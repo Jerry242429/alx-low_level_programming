@@ -3,10 +3,9 @@
 #include <time.h>
 /**
  * main - Entry point
- * Rrturn: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
-
 {
 	int d, p;
 
@@ -24,7 +23,6 @@ int main(void)
 	putchar(' ');
 	}
 	}
-
 	}
 	putchar('\n');
 
