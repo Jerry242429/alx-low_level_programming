@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main -Entry point of my code,
- * 
+ * main - print _putchar
+ * written by jerry
  * Return: Always 0
  */
 
@@ -19,4 +19,3 @@ _putchar('r');
 _putchar('\n');
 return (0);
 }
-
