@@ -1,16 +1,17 @@
-#include "main.h"
+#include "0-object_like_macro.h"
+#include "0-object_like_macro.h"
+#include <stdio.h>
 
 /**
-* main - tests function that prints if integer is positive or negative
-* Return: 0
-*/
-
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int i;
+	int s;
 
-	i = 0;
-	positive_or_negative(i);
-	
+	s = 98 + SIZE;
+	printf("%d\n", s);
 	return (0);
 }
