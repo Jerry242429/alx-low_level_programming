@@ -19,7 +19,7 @@ char *c_buffer(char *filef)
 	buf = malloc(sizeof(char) * 1024);
 	if (buf == NULL)
 	{
-		dprintf(STDERR_FILENO, "Error: can't write to %s\n", filef);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filef);
 		exit(99);
 
 	}
@@ -37,10 +37,10 @@ void c_file(int file_d)
 	int a;
 
 	a = close(file_d);
+
 	if (a == -1)
 	{
-	dprintf(STDERR_FILENO, "Error: can't close fd %d\n", file_d);	
-
+		dprintf(STDERR_FILENO, "Error: Can't close file_d %d\n", file_d);
 		exit(100);
 	}
 }
