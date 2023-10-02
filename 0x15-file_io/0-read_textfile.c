@@ -5,7 +5,7 @@
 #include <sys/types.h>
 
 /**
- * read_textfile - that reads a text file and prints it to POSIX
+ * read_textfile - reads a text file and prints it to POSIX
  * @filename: the file name that read
  * @letters: number of letter that reads and prints
  * Return: the actual numbert of letter
@@ -15,7 +15,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int file_dscript;
-	ssize_t lenw ;
+	ssize_t lenw;
 	ssize_t lengthr;
 	char *buff;
 
