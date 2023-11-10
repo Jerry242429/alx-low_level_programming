@@ -16,11 +16,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	a = NULL;
 	if (idx == 0)
-		a == add_dnodeint(h, n);
+		a = add_dnodeint(h, n);
 	else
 	{
 		he = *h;
-		b = l;
+		b = 1;
 		if (he != NULL)
 			while (he->prev != NULL)
 				he = he->prev;
