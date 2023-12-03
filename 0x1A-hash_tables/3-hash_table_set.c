@@ -23,7 +23,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
                 return (0);
 
 	i = key_index((const unsigned char *)key, ht->size);
-	bucket = ht->array[index];
+	bucket = ht->array[i];
 
 	while (bucket)
 	{
@@ -46,7 +46,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	new_node->key = kcopy;
 	new_node->value = vcopy;
-	new_node->next = ht->array[index];
-	ht->array[index] = new_node;
+	new_node->next = ht->array[i];
+	ht->array[i] = new_node;
 	return (1);
 }
