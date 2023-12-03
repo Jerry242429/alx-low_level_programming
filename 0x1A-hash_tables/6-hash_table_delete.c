@@ -1,12 +1,7 @@
-/*
- * File: 6-hash_table_delete.c
- * Auth: Gedeon Obae Gekonge
-*/
-
 #include "hash_tables.h"
 
 /**
- * hash_table_delete - Deletes a hash table.
+ * hash_table_delete - free a hash table.
  * @ht: A pointer to a hash table.
  */
 void hash_table_delete(hash_table_t *ht)
@@ -20,7 +15,7 @@ void hash_table_delete(hash_table_t *ht)
 	{
 		while (ht->array[i] != NULL)
 		{
-			next - ht->array[i]->next;
+			next = ht->array[i]->next;
 			free(ht->array[i]->key);
 			free(ht->array[i]->value);
 			free(ht->array[i]);
